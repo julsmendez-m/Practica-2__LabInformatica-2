@@ -13,12 +13,8 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(problema_1
-  main_p1.cpp
+  main.cpp
   funciones.h funciones.cpp
-  main_p3.cpp
-  main_p5.cpp
-  main_p7.cpp
-  main_p9.cpp
 )
 target_link_libraries(problema_1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 
