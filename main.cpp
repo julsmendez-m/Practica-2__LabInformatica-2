@@ -88,12 +88,43 @@ void problema9() {
 }
 
 int main() {
-    // Llamamos a cada problema uno despues de otro
-    problema1();
-    problema3();
-    problema5();
-    problema7();
-    problema9();
+    int opcion;
+
+    do {
+        cout << "\n--- MENU ---" << endl;
+        cout << "1) Problema 1: Calcular cambio" << endl;
+        cout << "2) Problema 3: Comparar cadenas" << endl;
+        cout << "3) Problema 5: Convertir int a cadena" << endl;
+        cout << "4) Problema 7: Eliminar repetidos" << endl;
+        cout << "5) Problema 9: Suma por bloques de cifras" << endl;
+        cout << "6) Salir" << endl;
+        cout << "Elija una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                problema1();
+                break;
+            case 2:
+                problema3();
+                break;
+            case 3:
+                problema5();
+                break;
+            case 4:
+                problema7();
+                break;
+            case 5:
+                problema9();
+                break;
+            case 6:
+                cout << "Chao!" << endl;
+                break;
+            default:
+                cout << "Opcion no valida." << endl;
+        }
+
+    } while (opcion != 6);
 
     return 0;
 }
